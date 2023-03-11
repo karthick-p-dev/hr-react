@@ -63,8 +63,8 @@
     "scripts": {
         "eject": "react-scripts eject",
         "lint": "node ./node_modules/eslint/bin/eslint.js  --ext=.jsx,.js,.tsx,.ts  ./",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+        "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
         "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test"
     },
     "eslintConfig": {
